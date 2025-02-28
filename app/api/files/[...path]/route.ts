@@ -24,7 +24,7 @@ export async function OPTIONS(request: NextRequest) {
 async function handleRequest(request: NextRequest, path: string[]) {
     const url = new URL(request.url);
     // Construct the target URL
-    const targetUrl = `https:/waline-service-red.vercel.app/${path.join("/")}${url.search}`;
+    const targetUrl = `https://waline-service-red.vercel.app/${path.join("/")}${url.search}`;
     
     // Prepare fetch options
     const options: RequestInit = {
